@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html leng="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, userscalable=no, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="rolagem.js"></script>
+    <title>Formulário</title>
+    
+</head>
+
+<body> 
+
+    <div class="inicio">
+        
+    </div>
+    <div class="wallpaper">
+            <div class="wrap">
+                <form action="login.html" class="formulario" name="form_Questoes" onsubmit="obter_resultado();">
+                    <div class="radio">
+                        <h2>Questionário</h2>
+                        
+                        <h2 class="quest1">1 – Você tem facilidade de se relacionar com as pessoas?</h2>
+                        
+                        <input type="radio" name="p1" id="a" value="a" required/>
+                        <label for="a">Sim</label>
+                        
+                        <input type="radio" name="p1" id="b" value="b" required />
+                        <label for="b">Não</label>
+                        
+                        <input type="radio" name="p1" id="c" value="c"  required/>
+                        <label for="c">Somente com pessoas muito próximas</label>
+                        
+                    </div>
+                    
+                    <div class="checkbox">
+                        <h2>2 – Você sabe exatamente quais são seus pontos fortes e fracos?</h2>
+                        
+                        <input type="radio" name="p2" id="a2" value="a" required/>
+                        <label for="a2">Sim</label>
+                        
+                        <input type="radio" name="p2" id="b2" value="b" required/>
+                        <label for="b2">Não</label>
+                        
+                        <input type="radio" name="p2" id="c2" value="c" required/>
+                        <label for="c2">Nunca pensei sobre isso</label>
+                        
+                    </div>
+                    
+                    <div class="radio">
+                        <h2>3 - Você costuma preocupar-se com a imagem que você passa através das redes sociais?</h2>
+                        
+                        <input type="radio" name="p3" id="a3" value="a" required />
+                        <label for="a3">Preocupo-me</label>
+                        
+                        <input type="radio" name="p3" id="b3" value="b" required />
+                        <label for="b3">Não me preocupo com isso</label>
+                        
+                        <input type="radio" name="p3" id="c3" value="c" required />
+                        <label for="c3">Desconheço as políticas de privacidade das redes.</label>
+                        
+                    </div>
+
+                    <div class="radio">
+                        
+                        <h2 class="quest">4 – Levando em consideração a vestimenta no trabalho formal, você tem alguma restrição sobre como se vestir?</h2>
+                        
+                        <input type="radio" name="p4" id="a4" value="a" required />
+                        <label for="a4"> Não vejo problema algum em utilizar a roupa de academia no trabalho</label>
+                        
+                        <input type="radio" name="p4" id="b4" value="b" required />
+                        <label for="b4">É importante estar na moda principalmente no ambiente de trabalho</label>
+                        
+                        <input type="radio" name="p4" id="c4" value="c" required />
+                        <label for="c4">O importante é utilizar uma roupa adequada que esteja limpa e bem passada</label>
+                        
+                    </div>
+                    
+                    <div class="checkbox">
+                        <h2>5 – De modo geral, no trabalho ou na escola, você faz mais do que é esperado de você?</h2>
+                        
+                        <input type="radio" name="p5" id="a5" value="a" required />
+                        <label for="a5">Faço apenas minha obrigação.</label>
+                        
+                        <input type="radio" name="p5" id="b5" value="b" required />
+                        <label for="b5">Habitualmente faço mais</label>
+                        
+                        <input type="radio" name="p5" id="c5" value="c" required />
+                        <label for="c5">Às vezes faço mais</label>
+                        
+                    </div>
+                    
+                    <div class="radio">
+                        <h2>6 - Você costuma manter contatos em sua rede com ex-colegas de trabalho ou escola?</h2>
+                        
+                        <input type="radio" name="p6" id="a6" value="a" required />
+                        <label for="a6">Sim</label>
+                        
+                        <input type="radio" name="p6" id="b6" value="b" required />
+                        <label for="b6">Não</label>
+                        
+                        <input type="radio" name="p6" id="c6" value="c" required />
+                        <label for="c6">Ocasionalmente</label>
+                        
+                    </div>
+                    
+                    <center>
+                    <div class="radio floor">
+                        <input class="btn" type="submit" value="Concluir" oninput="validar_questoes();" />
+                    </div>
+                    </center>  
+                </form>     
+            </div> 
+    </div> 
+
+</body>
+
+</html>

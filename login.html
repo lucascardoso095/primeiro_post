@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html leng="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, userscalable=no, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="rolagem.js"></script>
+    <title>Formulário</title>
+    
+</head>
+
+<body> 
+
+    <div class="inicio">
+        
+    </div>
+    <div class="fundo">
+            <div class="box">
+                <form action="indeex.html" class="formulario" mothod="POST" onsubmit="return validaForm();">
+                    <div class="box">
+
+                    	<img src="logo.png" />
+                        
+                        <label class="letra1">Nome:</label> <br>
+                        
+                        <center><input class="campos1" type="text" name="text" id="loginNome" placeholder="Insira seu nome" /></center><br>
+
+                        <label class="letra2">E-mail:</label><br>
+                        <center><input class="campos2" type="email" name="email" id="loginEmail" placeholder="Insira seu e-mail" /></center><br>
+
+                       <center> <input class="but" id="botaoEnviar" type="submit" name="enviar" value="Enviar"> </center>
+                        
+                    </div>
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>
